@@ -9,9 +9,14 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonkimm/facebook-tracker-mern.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/masonkimm/facebook-clone-mern#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "cors": "^2.8.5",

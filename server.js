@@ -22,6 +22,7 @@ const posts = require('./routes/posts');
 // }
 
 app.use('/api/v1/posts', posts);
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+*::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.App {
+  background-color: #f0f2f5;
+  height: fit-content;
+}
+.App::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.App__body {
+  display: flex;
+  margin-top: 2rem;
+}
+
+/* LOGO */
+.App-logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 07vmin;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  *::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  .App {
+    margin: 0;
+    padding: 0;
+  }
+  .App__body {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

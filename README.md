@@ -1,19 +1,23 @@
 # Facebook - Clone
 
-Project link: (https://masonkimm.github.io/facebook-clone/)
+Project link: (https://sjk-facebook-mern.herokuapp.com/)
 
 ## Description:
 
-Facebook clone focused on Front End development skills.
+Facebook clone built with the MERN stack.
+Update the status field to make a new post!
 
 ## Tech used
 
+- MongoDB
+- Express
 - React
+- Node
+- React context
 - Material UI
 - Random User API
 - Unsplash API
-- Github
-- Github Pages
+- Heroku
 
 ## Demo
 
@@ -36,21 +40,52 @@ Front-End focused facebook clone build with utilization of firebase firestore da
 
 ## Code Utilization:
 
-- Language Count: ![](https://img.shields.io/github/languages/count/masonkimm/facebook-clone)
-- Top language: ![](https://img.shields.io/github/languages/top/masonkimm/facebook-clone)
+- Language Count: ![](https://img.shields.io/github/languages/count/masonkimm/facebook-clone-mern)
+- Top language: ![](https://img.shields.io/github/languages/top/masonkimm/facebook-clone-mern)
 
 ## GitHub:
 
 - GitHub link: (https://github.com/masonkimm)
 
-- Github project page link: (https://github.com/masonkimm/facebook-clone)
+- Github project page link: (https://github.com/masonkimm/facebook-clone-mern)
 
-## Available_Scripts:
+## Available_Scripts & Usage:
+
+- config.env file and Unsplash API KEY is not included for security purposes.
+- config.env file will need to be created by the user.
 
 Command:
 
 ```sh
-git clone git@github.com:masonkimm/facebook-clone.git
+git clone git@github.com:masonkimm/facebook-clone-mern.git
+```
+
+## Usage
+
+```
+change config.env file in config folder
+```
+
+```
+ npm install
+ cd client npm install
+ cd ..
+
+ # Run front and backend
+ npm run dev
+
+ # Backend only
+ npm run server
+
+ # Frontend only
+ npm run client
+
+ # Build client
+ cd client
+ npm run build
+
+ # Prod
+ npm start
 ```
 
 ## Credits:

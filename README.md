@@ -32,12 +32,6 @@ Update the status field to make a new post!
 - [Credits](#Credits)
 - [License](#License)
 
-## Business_Context
-
-```
-Front-End focused facebook clone build with utilization of firebase firestore databse for back-end service.
-```
-
 ## Code Utilization:
 
 - Language Count: ![](https://img.shields.io/github/languages/count/masonkimm/facebook-clone-mern)

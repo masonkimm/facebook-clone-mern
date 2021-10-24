@@ -32,6 +32,7 @@ export default function Center({ users }) {
       <div className="Center__status">
         <StatusBar users={users} />
       </div>
+
       <div className="Center__post">
         <Posts users={users} pictures={pictures} />
       </div>

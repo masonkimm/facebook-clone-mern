@@ -36,7 +36,6 @@ export default function Post({
         </div>
         <div className="heading__removeBtn">
           {_id ? <button onClick={() => deletePost(_id)}>X</button> : null}
-          {/* <button onClick={() => deletePost(_id)}>X</button> */}
         </div>
       </div>
       <div className="post__body">

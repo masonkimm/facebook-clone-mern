@@ -1,22 +1,13 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Post from '../Post/Post';
 import { GlobalContext } from '../context/GlobalState';
 
 export default function Posts({ users, pictures }) {
-  const { posts, photos, getPosts } = useContext(GlobalContext);
-
-  console.log(posts);
-
-  // const [photoData, setPhotoData] = useState('');
-
-  // photos.then(async (value) => {
-  //   setPhotoData(value);
-  // });
-  // console.log(photoData);
-  // const newData = photoData.Map((photo) => photo);
+  const { posts, getPosts } = useContext(GlobalContext);
 
   useEffect(() => {
     getPosts();
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -25,24 +16,11 @@ export default function Posts({ users, pictures }) {
         <Post
           users={users[0]}
           key={post._id}
-          // day={post.day}
-          // like={post.like}
-          // comment={post.comment}
-          // share={post.share}
           status={post.status}
           _id={post._id}
-          // photos={}
         />
       ))}
-      {/* <Post
-        users={users[0]}
-        pictures={pictures[0]}
-        day={1}
-        like={1}
-        comment={1}
-        share={1}
-        // id={}
-      /> */}
+      {/* preset data */}
       <Post
         users={users[1]}
         pictures={pictures[1]}
@@ -50,7 +28,6 @@ export default function Posts({ users, pictures }) {
         like={23}
         comment={3}
         share={2}
-        // id={3}
       />
       <Post
         users={users[2]}
@@ -59,7 +36,6 @@ export default function Posts({ users, pictures }) {
         like={46}
         comment={20}
         share={19}
-        // id={4}
       />
       <Post
         users={users[3]}
@@ -68,7 +44,6 @@ export default function Posts({ users, pictures }) {
         like={1}
         comment={1}
         share={2}
-        // id={5}
       />
     </>
   );

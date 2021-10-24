@@ -1,9 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
-
 import axios from 'axios';
-
-// const [photoData, setPhotoData] = useState([]);
 
 const getUsers = async () => {
   const users = await axios
@@ -22,8 +19,7 @@ const getPhotos = async () => {
     .then((res) => {
       return [...res.data.results];
     });
-  // console.log(photos);
-  // return photos;
+  return photos;
 };
 
 const initialState = {
@@ -50,24 +46,13 @@ export const GlobalProvider = ({ children }) => {
   // eslint-disable-next-line
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
-  // actions
-  // const getUsers = async () => {
-  //   try{
-  //     const users = await axios.get('https://randomuser.me/api/?results=15');
-  //     dispatch({
-  //       t
-  //     })
-
-  //   }
-  // };
-
   const getPosts = async () => {
     try {
       const res = await axios.get('/api/v1/posts');
 
       dispatch({
         type: 'GET_POSTS',
-        payload: res.data.data,
+        payload: res.data.data.reverse(),
       });
     } catch (err) {
       dispatch({
